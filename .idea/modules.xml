@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Hospital/Controller/Controller.iml" filepath="$PROJECT_DIR$/Hospital/Controller/Controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hospital/Hospital.iml" filepath="$PROJECT_DIR$/Hospital/Hospital.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hospital/Model/Model.iml" filepath="$PROJECT_DIR$/Hospital/Model/Model.iml" />
       <module fileurl="file://$PROJECT_DIR$/Projecto1Progra3.iml" filepath="$PROJECT_DIR$/Projecto1Progra3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hospital/Service/Service.iml" filepath="$PROJECT_DIR$/Hospital/Service/Service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hospital/View/View.iml" filepath="$PROJECT_DIR$/Hospital/View/View.iml" />
     </modules>
   </component>
 </project>
