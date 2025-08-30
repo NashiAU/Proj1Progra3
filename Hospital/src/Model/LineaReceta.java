@@ -1,3 +1,5 @@
+package Model;
+
 public class LineaReceta {
     //Para la factura
     private Medicamento medicamento;  // Qué medicamento
