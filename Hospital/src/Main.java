@@ -16,12 +16,11 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-           //loginView view = new loginView();
-            buscarPacienteView view = new buscarPacienteView();
+           loginView view = new loginView();
 
            JFrame frame = new JFrame("Login");
            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-           frame.setContentPane(view.getBuscarPane());
+           frame.setContentPane(view.getLoginPanel());
            frame.pack();
            frame.setLocationRelativeTo(null);
            frame.setVisible(true);
@@ -29,15 +28,6 @@ public class Main {
 
             //-----------------------------------------------------------------------------------------------------------------------------------------
             ListaMedicosService medicoService = new ListaMedicosService();
-
-            // PRUEBA TABLA PACIENTES
-            System.out.println("\nPRUEBA TABLA PACIENTES\n");
-
-            List<Paciente> pacientesPrueba = List.of(
-                    new Paciente("P001", "1234", "Juan Perez", LocalDate.of(1990, 5, 12), "8888-1111"),
-                    new Paciente("P002", "abcd", "María López", LocalDate.of(1985, 8, 23), "8888-2222"),
-                    new Paciente("P003", "pass", "Carlos Gómez", LocalDate.of(2000, 1, 3), "8888-3333")
-            );
 
 
             // 1. Incluir Médicos

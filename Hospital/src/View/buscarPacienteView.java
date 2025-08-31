@@ -5,7 +5,10 @@ import Model.entidades.Paciente;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.event.*;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.function.BiConsumer;
+import java.util.function.Consumer;
 
 public class buscarPacienteView extends JDialog {
     private JPanel contentPane;
@@ -18,6 +21,8 @@ public class buscarPacienteView extends JDialog {
 
     private DefaultTableModel modeloTabla;
 
+    private BiConsumer<String, String> onBuscarListener;
+
     public buscarPacienteView() {
         inicializarTabla();
     }
@@ -28,19 +33,8 @@ public class buscarPacienteView extends JDialog {
         pacientesTabla.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
     }
 
-    public void actualizarTabla(List<Paciente> pacientes) {
-        modeloTabla.setRowCount(0); // Limpia la tabla
-        for (Paciente p : pacientes) {
-            modeloTabla.addRow(new Object[]{
-                    p.getId(),
-                    p.getNombre(),
-                    p.getFechaNacimiento(),
-                    p.getTelefono()
-            });
-        }
-    }
-    public JPanel getBuscarPane() {
-        return contentPane;
-    }
+
+
+
 
 }
