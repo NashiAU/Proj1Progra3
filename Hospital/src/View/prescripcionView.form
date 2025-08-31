@@ -100,7 +100,7 @@
                     <border type="none"/>
                     <children/>
                   </scrollpane>
-                  <component id="58620" class="com.github.lgooddatepicker.components.DatePicker" binding="datePicker1" default-binding="true">
+                  <component id="58620" class="com.github.lgooddatepicker.components.DatePicker" binding="datePicker1" custom-create="true" default-binding="true">
                     <constraints>
                       <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                     </constraints>
