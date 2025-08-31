@@ -4,6 +4,7 @@ import Model.entidades.Medico;
 import Model.entidades.Paciente;
 import Model.entidades.Receta;
 import Service.ListaMedicosService;
+import Service.ListaPacientesService;
 import Service.PrescripcionService;
 import  View.loginView;
 
@@ -23,7 +24,8 @@ public class Main {
            frame.setLocationRelativeTo(null);
            frame.setVisible(true);
 
-           //-----------------------------------------------------------------------------------------------------------------------------------------
+
+            //-----------------------------------------------------------------------------------------------------------------------------------------
             ListaMedicosService medicoService = new ListaMedicosService();
 
             // 1. Incluir Médicos
