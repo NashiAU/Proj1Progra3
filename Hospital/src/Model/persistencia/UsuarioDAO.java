@@ -1,4 +1,4 @@
-package Model.enums;
+package Model.persistencia;
 
 public class UsuarioDAO {
 }
