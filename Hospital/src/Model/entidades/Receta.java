@@ -97,4 +97,33 @@ public class Receta {
     public EstadoReceta getEstado() { return estado; }
     public void setEstado(EstadoReceta estado) { this.estado = estado; }
 
+    // ToString() para verificacion de metodos
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Receta ID: ").append(id).append("\n");
+        sb.append("Médico: ").append(medico != null ? medico.getNombre() : "N/A").append("\n");
+        sb.append("Paciente: ").append(paciente != null ? paciente.getNombre() : "N/A").append("\n");
+        sb.append("Fecha de confección: ").append(fechaConfeccion).append("\n");
+        sb.append("Fecha de retiro: ").append(fechaRetiro != null ? fechaRetiro : "No definida").append("\n");
+        sb.append("Estado: ").append(estado).append("\n");
+        sb.append("Medicamentos:\n");
+
+        if (lineas.isEmpty()) {
+            sb.append("  (Sin medicamentos)\n");
+        } else {
+            for (int i = 0; i < lineas.size(); i++) {
+                LineaReceta linea = lineas.get(i);
+                sb.append("  ").append(i + 1).append(". ")
+                        .append(linea.getMedicamento().getNombre())
+                        .append(" - ").append(linea.getCantidad())
+                        .append(" unidades, ").append(linea.getIndicaciones())
+                        .append(", ").append(linea.getDuracionDias()).append(" días\n");
+            }
+        }
+
+        return sb.toString();
+    }
+
+
 }

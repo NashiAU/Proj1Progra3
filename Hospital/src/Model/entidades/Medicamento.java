@@ -7,20 +7,21 @@ public class Medicamento {
     private String presentacion;
     private double precio;
 
-    public double getPrecio() {
-        return precio;
-    }
-
-    public void setPrecio(double precio) {
+    // Constructor completo
+    public Medicamento(String codigo, String nombre, String presentacion, double precio) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.presentacion = presentacion;
         this.precio = precio;
     }
 
-    public String getPresentacion() {
-        return presentacion;
+    // Getters y setters
+    public String getCodigo() {
+        return codigo;
     }
 
-    public void setPresentacion(String presentacion) {
-        this.presentacion = presentacion;
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
     }
 
     public String getNombre() {
@@ -31,12 +32,20 @@ public class Medicamento {
         this.nombre = nombre;
     }
 
-    public String getCodigo() {
-        return codigo;
+    public String getPresentacion() {
+        return presentacion;
     }
 
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
+    public void setPresentacion(String presentacion) {
+        this.presentacion = presentacion;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
     }
 
 
