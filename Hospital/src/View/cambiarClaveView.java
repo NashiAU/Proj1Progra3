@@ -20,7 +20,5 @@ public class cambiarClaveView extends JDialog {
         pack();
         setLocationRelativeTo(parent);
         getRootPane().setDefaultButton(aceptarButton);
-
-
     }
 }
