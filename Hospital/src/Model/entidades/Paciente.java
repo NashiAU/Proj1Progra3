@@ -52,6 +52,8 @@ public class Paciente extends Usuario{
         this.fechaNacimiento = fechaNacimiento;
     }
 
+
+
     @Override
     public TipoUsuario getTipo() {
         return null;
