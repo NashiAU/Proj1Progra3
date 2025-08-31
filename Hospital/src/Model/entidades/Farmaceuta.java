@@ -2,14 +2,14 @@ package Model.entidades;
 
 import Model.enums.TipoUsuario;
 
-public class Admin extends Usuario {
-    public Admin(String id, String clave, String nombre) {
+public class Farmaceuta extends Usuario {
+    public Farmaceuta(String id, String clave, String nombre) {
         super(id, clave, nombre);
     }
 
     @Override
     public TipoUsuario getTipo() {
-        return TipoUsuario.ADMIN;
+        return TipoUsuario.FARMACEUTA;
     }
 
 }

@@ -1,7 +1,7 @@
 package Model.enums;
 
 public enum TipoUsuario {
-    ADMINISTRADOR,
+    ADMIN,
     MEDICO,
     FARMACEUTA
 }

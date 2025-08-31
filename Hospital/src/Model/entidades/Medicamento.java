@@ -15,8 +15,6 @@ public class Medicamento {
         this.precio = precio;
     }
 
-
-
     public String getPresentacion() {
         return presentacion;
     }
