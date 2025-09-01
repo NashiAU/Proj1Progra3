@@ -57,4 +57,12 @@ public class ListaGenericaService<T extends Usuario> {
         }
         return false;
     }
+
+    public List<T> getUsuarios() {
+        return usuarios;
+    }
+
+    public void setUsuarios(List<T> usuarios) {
+        this.usuarios = usuarios;
+    }
 }

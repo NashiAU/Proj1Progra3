@@ -13,6 +13,18 @@ public abstract class Usuario {
         this.nombre = nombre;
     }
 
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setClave(String clave) {
+        this.clave = clave;
+    }
+
     public String getId() {
         return id;
     }
@@ -23,10 +35,6 @@ public abstract class Usuario {
 
     public String getClave() {
         return clave;
-    }
-
-    public void setClave(String clave) {
-        this.clave = clave;
     }
 
     public abstract TipoUsuario getTipo();
